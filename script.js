@@ -2,7 +2,7 @@ const ALL_FANTASY_DATA_API_URL = 'https://fantasy.premierleague.com/api/bootstra
 const SPECIFIC_FANTASY_PLAYER_API_URL = 'https://fantasy.premierleague.com/api/element-summary/'
 const SPECIFIC_FANTASY_PLAYER_PICTURE_URL = 'https://platform-static-files.s3.amazonaws.com/premierleague/photos/players/110x140/p'
 const search = document.getElementById('search');
-const matchList = document.getElementById('match-list')
+const matchList = document.getElementById('list')
 
 
 let allPlayers;
@@ -18,28 +18,28 @@ const searchStates = async searchText => {
         const regex = new RegExp(`^${searchText}`, 'gi')
         return player.web_name.match(regex) || player.first_name.match(regex) || player.second_name.match(regex)
     })
-    if (searchText === 0) {
+    if (searchText === '') {
         matches = {};
         matchList.innerHTML = '';
     }
     
+    matchList.innerHTML = ''
     outputHtml(matches)
 }
 
 const outputHtml = matches => {
+    
     if(matches.length > 0) {
-        const html = matches.map(match => 
-                
-            `<div class="card card-body mb-1">
-                <span style="display:inline;"><img src="${SPECIFIC_FANTASY_PLAYER_PICTURE_URL}${match.code}.png" alt="" width="32" height="32"><\span>
-                <span>${match.first_name} ${match.second_name} <span>
-            <div>
-            
-            `).join('')
-            matchList.innerHTML = html
-    } else {
-        matchList.innerHTML = ''
-    }
+         matches.forEach(match => {
+             console.log(match)
+             let li = document.createElement("li")
+             li.innerHTML = `<li class="list-group-item">
+                <a href="#"><img src="${SPECIFIC_FANTASY_PLAYER_PICTURE_URL}${match.code}.png" alt="" width="32" height="32">
+                ${match.first_name} ${match.second_name} 
+                </li>`
+            matchList.appendChild(li)
+         } )
+    } 
     
 
 }
