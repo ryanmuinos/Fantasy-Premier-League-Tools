@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fantasy PL Tools | Players </title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="players.js" defer ></script>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    </script>  
+    <style>
+
+        .navbar{
+          margin-bottom:0;
+          border-radius:0;
+        }
+        div.scrollmenu {
+          background-color: #333;
+          overflow: auto;
+          white-space: nowrap;
+
+        }
+        
+        div.scrollmenu a {
+          display: inline-block;
+          color: white;
+          text-align: center;
+          padding: 14px;
+          text-decoration: none;
+        }
+   
+
+
+    </style>
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">Fantasy PL Tools</a>
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Players</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="teams.html">Teams</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">More</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <br>         
+
+        <div class="jumbotron text-center">
+            <div class="container mt-3">
+              <h1>Welcome To Fantasy Premier League Player Tools</h1>
+                <div class="input-group mb-4 input-group-lg">
+                <input class="form-control border border-dark" type="text" id="search" placeholder="Enter player here">
+                </div>
+                <div class="container">
+                <ul id="list" class="list-inline">
+                    
+    
+                </ul>
+                </div>
+            </div>
+        </div>
+
+  
+        <div class="container">
+          <h2 class="text-center">Top Players</h2>
+          <hr>
+          <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+          
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                
+                <div class="card-deck mb-3 text-center">
+                    <div class="card mb-4 box-shadow bg-warning">                   
+                        <div id="topCard1" class="card-body d-flex flex-column text-center">                     
+                          <button type="button" class="btn btn-lg btn-block btn-outline-primary mt-auto">Sign up for free</button>
+                        </div>
+                    </div>
+                    <div class="card mb-4 box-shadow bg-success">                  
+                        <div id="topCard2" class="card-body d-flex flex-column text-center">                       
+                            <button type="button" class="btn btn-lg btn-block btn-primary mt-auto">Get started</button>
+                        </div>
+                    </div>
+                    <div class="card mb-4 box-shado bg-danger">                    
+                        <div id="topCard3" class="card-body d-flex flex-column text-center">                       
+                            <button type="button" class="btn btn-lg btn-block btn-primary mt-auto">Get started</button>
+                        </div>
+                    </div>
+                </div>  
+              </div>
+              <div class="carousel-item">
+                
+                <div class="card-deck mb-3 text-center">
+                    <div class="card mb-4 box-shadow bg-warning">                   
+                        <div id="topCard4" class="card-body d-flex flex-column text-center">                     
+                          <button type="button" class="btn btn-lg btn-block btn-outline-primary mt-auto">Sign up for free</button>
+                        </div>
+                    </div>
+                    <div class="card mb-4 box-shadow bg-success">                  
+                        <div id="topCard5" class="card-body d-flex flex-column text-center">                       
+                            <button type="button" class="btn btn-lg btn-block btn-primary mt-auto">Get started</button>
+                        </div>
+                    </div>
+                    <div class="card mb-4 box-shado bg-danger">                    
+                        <div id="topCard6" class="card-body d-flex flex-column text-center">                       
+                            <button type="button" class="btn btn-lg btn-block btn-primary mt-auto">Get started</button>
+                        </div>
+                    </div>
+                </div>  
+              </div>
+              <div class="carousel-item">
+                
+                <div class="card-deck mb-3 text-center">
+                    <div class="card mb-4 box-shadow bg-warning">                   
+                        <div id="topCard7" class="card-body d-flex flex-column text-center">                     
+                          <button type="button" class="btn btn-lg btn-block btn-outline-primary mt-auto">Sign up for free</button>
+                        </div>
+                    </div>
+                    <div class="card mb-4 box-shadow bg-success">                  
+                        <div id="topCard8" class="card-body d-flex flex-column text-center">                       
+                            <button type="button" class="btn btn-lg btn-block btn-primary mt-auto">Get started</button>
+                        </div>
+                    </div>
+                    <div class="card mb-4 box-shado bg-danger">                    
+                        <div id="topCard9" class="card-body d-flex flex-column text-center">                       
+                            <button type="button" class="btn btn-lg btn-block btn-primary mt-auto">Get started</button>
+                        </div>
+                    </div>
+                </div>  
+              </div>
+            </div>
+          
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          
+          </div>
+        </div>
+        
+            
+
+        <div class="container">
+          <h2 class="text-center">Popular Players</h2>
+          <hr>
+          <div id="popular" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+          
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                
+                <div class="card-deck mb-3 text-center">
+                    <div class="card mb-4 box-shadow bg-warning">                   
+                        <div id="popularCard1" class="card-body d-flex flex-column text-center">                     
+                          <button type="button" class="btn btn-lg btn-block btn-outline-primary mt-auto">Sign up for free</button>
+                        </div>
+                    </div>
+                    <div class="card mb-4 box-shadow bg-success">                  
+                        <div id="popularCard2" class="card-body d-flex flex-column text-center">                       
+                            <button type="button" class="btn btn-lg btn-block btn-primary mt-auto">Get started</button>
+                        </div>
+                    </div>
+                    <div class="card mb-4 box-shado bg-danger">                    
+                        <div id="popularCard3" class="card-body d-flex flex-column text-center">                       
+                            <button type="button" class="btn btn-lg btn-block btn-primary mt-auto">Get started</button>
+                        </div>
+                    </div>
+                </div>  
+              </div>
+              <div class="carousel-item">
+                
+                <div class="card-deck mb-3 text-center">
+                    <div class="card mb-4 box-shadow bg-warning">                   
+                        <div id="popularCard4" class="card-body d-flex flex-column text-center">                     
+                          <button type="button" class="btn btn-lg btn-block btn-outline-primary mt-auto">Sign up for free</button>
+                        </div>
+                    </div>
+                    <div class="card mb-4 box-shadow bg-success">                  
+                        <div id="popularCard5" class="card-body d-flex flex-column text-center">                       
+                            <button type="button" class="btn btn-lg btn-block btn-primary mt-auto">Get started</button>
+                        </div>
+                    </div>
+                    <div class="card mb-4 box-shado bg-danger">                    
+                        <div id="popularCard6" class="card-body d-flex flex-column text-center">                       
+                            <button type="button" class="btn btn-lg btn-block btn-primary mt-auto">Get started</button>
+                        </div>
+                    </div>
+                </div>  
+              </div>
+              <div class="carousel-item">
+                
+                <div class="card-deck mb-3 text-center">
+                    <div class="card mb-4 box-shadow bg-warning">                   
+                        <div id="popularCard7" class="card-body d-flex flex-column text-center">                     
+                          <button type="button" class="btn btn-lg btn-block btn-outline-primary mt-auto">Sign up for free</button>
+                        </div>
+                    </div>
+                    <div class="card mb-4 box-shadow bg-success">                  
+                        <div id="popularCard8" class="card-body d-flex flex-column text-center">                       
+                            <button type="button" class="btn btn-lg btn-block btn-primary mt-auto">Get started</button>
+                        </div>
+                    </div>
+                    <div class="card mb-4 box-shado bg-danger">                    
+                        <div id="popularCard9" class="card-body d-flex flex-column text-center">                       
+                            <button type="button" class="btn btn-lg btn-block btn-primary mt-auto">Get started</button>
+                        </div>
+                    </div>
+                </div>  
+              </div>
+            </div>
+          
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#popular" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#popular" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          
+          </div>
+        </div>
+            
+        
+
+
+            <div class="modal" id="myModal">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content">
+                  
+                    <!-- Modal Header -->
+                    <div id="modal-header1" class="modal-header text-center">
+                    </div>
+                    
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <ul id="stats-list"class="list-inline list-group-flush">
+                
+
+                        </ul>
+                    </div>
+                    
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+        
+      <!-- Footer -->
+<footer class="page-footer font-small bg-dark pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-white text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase text-white">Footer Content</h5>
+        <p>Here you can use rows and columns to organize your footer content.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center text-white py-3">© 2020 Copyright
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+    
+              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script></head>
+
+</body>
+</html>
