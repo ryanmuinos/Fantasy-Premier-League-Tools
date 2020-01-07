@@ -1,7 +1,7 @@
 const ALL_FANTASY_DATA_API_URL = 'https://fantasy.premierleague.com/api/bootstrap-static/'
 const SPECIFIC_FANTASY_PLAYER_API_URL = 'https://fantasy.premierleague.com/api/element-summary/'
 const SPECIFIC_FANTASY_PLAYER_PICTURE_URL = 'https://platform-static-files.s3.amazonaws.com/premierleague/photos/players/110x140/p'
-
+const proxy = 'https://cors-anywhere.herokuapp.com/'
 const modal = document.getElementById('modal');
 const modalHeader = document.getElementById('modal-header')
 const modalHeaderTop = document.getElementById('modal-header1')
@@ -35,7 +35,7 @@ let teams;
 
 
 function fetchAllFantasyData() {
-    return fetch(ALL_FANTASY_DATA_API_URL )
+    return fetch(proxy + ALL_FANTASY_DATA_API_URL )
     .then((response) => response.json())
     .then((json) =>  json);
 }
@@ -138,7 +138,7 @@ function setStats() {
 }
 
 async function fetchPlayerHistory(code) {
-    return await fetch(SPECIFIC_FANTASY_PLAYER_API_URL+code+'/')
+    return await fetch(proxy + SPECIFIC_FANTASY_PLAYER_API_URL+code+'/')
     .then((response) => response.json())
     .then((json) =>  json)
     
