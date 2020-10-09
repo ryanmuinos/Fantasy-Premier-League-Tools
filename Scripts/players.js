@@ -87,7 +87,7 @@ async function showModal(web_name){
     setStats()
     $("#myModal").modal("toggle")
 }
-
+//Setting the stats
 function setStats() {
     modalHeaderTop.innerHTML =    
     `<img src="${SPECIFIC_FANTASY_PLAYER_PICTURE_URL}${currentPlayerInfo.code}.png" alt="" width="64" height="64">               
