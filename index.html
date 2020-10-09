@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <title>Document</title>
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <title>Document</title>
+  <style>
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
 
-        .navbar{
-          margin-bottom:0;
-          border-radius:0;
-        }
-        div.scrollmenu {
-          background-color: #333;
-          overflow: auto;
-          white-space: nowrap;
+    div.scrollmenu {
+      background-color: #333;
+      overflow: auto;
+      white-space: nowrap;
 
-        }
-        
-        div.scrollmenu a {
-          display: inline-block;
-          color: white;
-          text-align: center;
-          padding: 14px;
-          text-decoration: none;
-        }
-        .carousel{
-  margin-top: 50px;
-}
-.carousel-inner{
-  height: 100px;
-}
-.carousel-caption{
-  color: #fff;
-  top: 50%;
-}
+    }
 
+    div.scrollmenu a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px;
+      text-decoration: none;
+    }
 
-    </style>
+    .carousel {
+      margin-top: 50px;
+    }
+
+    .carousel-inner {
+      height: 100px;
+    }
+
+    .carousel-caption {
+      color: #fff;
+      top: 50%;
+    }
+  </style>
 </head>
+
 <body>
-     
+
   <nav class="navbar navbar-expand-md bg-dark navbar-dark">
     <!-- Brand -->
     <a class="navbar-brand" href="index.html">Fantasy PL Tools</a>
-  
+
     <!-- Toggler/collapsibe Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
+
     <!-- Navbar links -->
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
@@ -66,7 +69,37 @@
       </ul>
     </div>
   </nav>
-  <br>         
+  <br>
 
+ 
+
+
+
+
+  <div class="modal" id="myModal">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div id="modal-header1" class="modal-header text-center">
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <ul id="stats-list" class="list-inline list-group-flush">
+
+
+          </ul>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>

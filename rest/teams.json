@@ -1,0 +1,11 @@
+{
+    "teams": [
+      { 
+          "id": 1, 
+          "goalkeeper": "Pope", 
+          "defender": "Robertson", 
+          "midfielder": "De Bruyne", 
+          "forward": "Kane" 
+        }
+    ]
+  }
