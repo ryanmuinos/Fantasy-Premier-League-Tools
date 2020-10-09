@@ -3,7 +3,9 @@
  users to see the top performing players, see their games,
  and search players. You can also see the top performing
  teams and create your team that is stored in our own
- SQL Database!
+ SQL Database! We use the official Fantasy Premier League
+ API to get you accurate stats of your players to build
+ your team!
 
 Screenshots:
 Player Page Top:
